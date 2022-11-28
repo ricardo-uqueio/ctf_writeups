@@ -1,1 +1,0 @@
-I've already solved all the bandit challenges before. The goal of these is to practice writeups, so that later I can recall my thought process. Plus, I saw John Hammond solving these with python, so I can use that aproach to practice my scripting skills
