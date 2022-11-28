@@ -24,8 +24,7 @@ current_dir=${PWD##*/}
 #The first iteration goes thru all folders in depth level 1
 for d in $BASE/*; do
   if [ -d "$d" ]; then
-    echo "$d"
-    
+
     #I use cd so that afterwards I can use PWD to get the current dir as a variable
     cd "$d"
     current_dir=${PWD##*/} # gets current depth 1 dir as a variable
