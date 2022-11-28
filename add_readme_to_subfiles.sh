@@ -39,7 +39,7 @@ for d in $BASE/*; do
     	current_dir=${PWD##*/} #gets current depth level 2 dir as a variable
     	if [ -d "$dd" ]; then
    		
-   		 #echoes the initial data to a README.md files in depth 1
+   		 #echoes the initial data to a README.md files in depth 2
     		echo "Writeups for $current_dir challenges" > README.md
     	fi
     done
