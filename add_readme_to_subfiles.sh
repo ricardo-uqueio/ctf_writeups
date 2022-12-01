@@ -24,8 +24,7 @@ current_dir=${PWD##*/}
 #The first iteration goes thru all folders in depth level 1
 for d in $BASE/*; do
   if [ -d "$d" ]; then
-    echo "$d"
-    
+
     #I use cd so that afterwards I can use PWD to get the current dir as a variable
     cd "$d"
     current_dir=${PWD##*/} # gets current depth 1 dir as a variable
@@ -40,7 +39,7 @@ for d in $BASE/*; do
     	current_dir=${PWD##*/} #gets current depth level 2 dir as a variable
     	if [ -d "$dd" ]; then
    		
-   		 #echoes the initial data to a README.md files in depth 1
+   		 #echoes the initial data to a README.md files in depth 2
     		echo "Writeups for $current_dir challenges" > README.md
     	fi
     done

@@ -1,4 +1,5 @@
 Writeups for bandit challenges
+<<<<<<< HEAD
 I've already solved all the bandit challenges before. The goal of these is to practice writeups, so that later I can recall my thought process. Plus, I saw John Hammond solving these with python, so I can use that aproach to practice my scripting skills
 
 Bandit 0:
@@ -266,3 +267,7 @@ With cat data8, we finally have have the password:
 #level 13 pass: wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
 
 
+=======
+
+I've already solved all the bandit challenges before. The goal here is to practice writing writeups (...is that even a sentence?), so that later I can recall my thought process. Plus, I saw John Hammond solving these with python, I can use that aproach to practice my scripting skills with python.
+>>>>>>> ce8b4fee8dea718e62ed3c642623873e2128ba38
