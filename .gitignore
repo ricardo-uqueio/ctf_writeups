@@ -1,2 +1,6 @@
+
+sec_valley/coding/*
+!sec_valley/coding/weird_code
 # Except this file
 !.gitignore
+
