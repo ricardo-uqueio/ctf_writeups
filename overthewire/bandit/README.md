@@ -1,4 +1,5 @@
-Writeups for bandit challenges
+Writeups for bandit challenges ([link for the challenges](https://overthewire.org/wargames/bandit/))
+
 
 The goal of these is to practice writeups, so that later I can recall my thought process.
 
