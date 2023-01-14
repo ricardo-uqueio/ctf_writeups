@@ -344,7 +344,7 @@ There are 2 files in the homedirectory: passwords.old and passwords.new. The pas
 NOTE: if you have solved this level and see ‘Byebye!’ when trying to log into bandit18, this is related to the next level, bandit19
 
 **Solution**<br>
-diff command allows us to compare files.
+diff command allows us to compare files.<br>
 `diff passwords.old passwords.new`
 
 **Level 18 pass:** hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
@@ -358,13 +358,13 @@ The password for the next level is stored in a file readme in the homedirectory.
 **Solution**<br>
 As explained in the description, we're logged out when we connect with ssh. The idea here is to find a way to login without sourcing the .bashrc file. A number of ways are available to achieve this.
 One such way is to mash press Ctrl+c as soon as we log in, but the issue with this solution is making it work consistently.
-What I used:
-`ssh -t bandit18@bandit.labs.overthewire.org -p 2220 /bin/bash --norc`
-The `-t` option forces a pseudo-terminal allocation
+
+What I used:<br>
+`ssh -t bandit18@bandit.labs.overthewire.org -p 2220 /bin/bash --norc`<br>
+The `-t` option forces a pseudo-terminal allocation.<br>
 `/bin/bash --norc` starts bash without sourcing the `~/.bashrc`.
 
 **Level 19 pass:** awhqfNnAbc1naukrpqDYcF95h7HoMTrC
-
 
 
 # Bandit 19-20
@@ -374,6 +374,7 @@ ssh bandit19@bandit.labs.overthewire.org -p 2220
 To gain access to the next level, you should use the setuid binary in the homedirectory. Execute it without arguments to find out how to use it. The password for this level can be found in the usual place (/etc/bandit_pass), after you have used the setuid binary.
 
 **Solution**<br>
+Here we only need to run cat on the password for the next level. Since the suid binary anllows us to run commands as user bandit20, all we need to do is:
 `./bandit20-do cat /etc/bandit_pass/bandit20`
 
 **Level 20 pass:** VxCazJaVykI6W36BkBU0mJTCM8rR95XT
@@ -397,13 +398,14 @@ The 2nd terminal is used to send the current level password on a specified port 
 
 `Tmux` is a terminal multiplexer, which means it enables us to use multiple terminals in a single window, exactly what we need to achieve our goal.
 
-After spliting the terminal into two panes, we can use:
-In the 1st one, `cat /etc/bandit_pass/bandit20 | nc -lv 9999`
+After spliting the terminal into two panes, we can:<br>
+In the 1st one, `cat /etc/bandit_pass/bandit20 | nc -lv 9999`<br>
 Here we first use `cat /etc/bandit_pass/bandit20` to print the current level password, and then we pipe the output to `nc -lv 9999` which listens for a connetion on port 9999.
 <br>![print 1](bandit20_21_captures/1.png)
 
-In the second terminal/pane:
+In the second terminal/pane:<br>
 `./suconnect 9999` which connects to localhost (as explained in the description) on port 9999.
+
 Since we already set up the 1st terminal/pane to send the correct password for the current level, we get:
 <br>![print 2](bandit20_21_captures/2.png)
 
