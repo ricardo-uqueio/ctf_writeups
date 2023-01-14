@@ -1,6 +1,7 @@
-Writeups for bandit challenges
+Writeups for bandit challenges ([link for the challenges](https://overthewire.org/wargames/bandit/))
 
-I've already solved all the bandit challenges before. The goal of these is to practice writeups, so that later I can recall my thought process. Plus, I saw John Hammond solving these with python, so I can use that aproach to practice my scripting skills.
+
+The goal of these is to practice writeups, so that later I can recall my thought process.
 
 # Bandit 0:
 **ssh to host bandit.labs.overthewire.org with user bandit0 at port 2220**
@@ -10,7 +11,7 @@ password: bandit0
 # Bandit 0-1
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 
-**Description**<br>:
+**Description**<br>
 The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.
 
 **Solution**<br>
@@ -22,7 +23,7 @@ The password for the next level is stored in a file called readme located in the
 # Bandit 1-2
 ssh bandit1@bandit.labs.overthewire.org -p 2220
 
-**Description**<br>:
+**Description**<br>
 The password for the next level is stored in a file called - located in the home directory
 
 **Solution**<br>
@@ -34,7 +35,7 @@ The password for the next level is stored in a file called - located in the home
 # Bandit 2-3
 ssh bandit2@bandit.labs.overthewire.org -p 2220
 
-**Description**<br>:
+**Description**<br>
 The password for the next level is stored in a file called spaces in this filename located in the home directory
 
 **Solution**<br>
@@ -46,7 +47,7 @@ The password for the next level is stored in a file called spaces in this filena
 # Bandit 3-4
 ssh bandit3@bandit.labs.overthewire.org -p 2220
 
-**Description**<br>:
+**Description**<br>
 The password for the next level is stored in a hidden file in the inhere directory.
 
 **Solution**<br>
@@ -58,7 +59,7 @@ The password for the next level is stored in a hidden file in the inhere directo
 # Bandit 4-5
 ssh bandit4@bandit.labs.overthewire.org -p 2220
 
-**Description**<br>:
+**Description**<br>
 The password for the next level is stored in the only human-readable file in the inhere directory. Tip: if your terminal is messed up, try the “reset” command.
 
 **Solution**<br>
@@ -71,7 +72,7 @@ Execute `file` command on each file found with `find` command.
 # Bandit 5-6
 ssh bandit5@bandit.labs.overthewire.org -p 2220
 
-**Description**<br>:
+**Description**<br>
 The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
 
     human-readable
@@ -88,7 +89,7 @@ The password for the next level is stored in a file somewhere under the inhere d
 # Bandit 6-7
 ssh bandit6@bandit.labs.overthewire.org -p 2220
 
-**Description**<br>:
+**Description**<br>
 The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
 
     owned by user bandit7
@@ -106,7 +107,8 @@ The password for the next level is stored in a file somewhere under the inhere d
 # Bandit 7-8 
 ssh bandit7@bandit.labs.overthewire.org -p 2220
 
-**Description**<br>:
+
+**Description**<br>
 The password for the next level is stored in the file data.txt next to the word millionth
 
 **Solution**<br>
@@ -118,7 +120,7 @@ The password for the next level is stored in the file data.txt next to the word 
 # Bandit 8-9 
 ssh bandit8@bandit.labs.overthewire.org -p 2220
 
-**Description**<br>:
+**Description**<br>
 The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
 
 **Solution**<br>
@@ -130,7 +132,7 @@ The password for the next level is stored in the file data.txt and is the only l
 # Bandit 9-10 
 ssh bandit9@bandit.labs.overthewire.org -p 2220
 
-**Description**<br>:
+**Description**<br>
 The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
 
 **Solution**<br>
@@ -142,7 +144,8 @@ The password for the next level is stored in the file data.txt in one of the few
 # Bandit 10-11
 ssh bandit10@bandit.labs.overthewire.org -p 2220
 
-**Description**<br>:
+
+**Description**<br>
 The password for the next level is stored in the file data.txt, which contains base64 encoded data
 **Solution**<br>
 `cat data.txt | base64 -d`
@@ -153,7 +156,7 @@ The password for the next level is stored in the file data.txt, which contains b
 # Bandit 11-12
 ssh bandit11@bandit.labs.overthewire.org -p 2220
 
-**Description**<br>:
+**Description**<br>
 The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
 
 **Solution**<br>
@@ -165,7 +168,7 @@ The password for the next level is stored in the file data.txt, where all lowerc
 # Bandit 12-13
 ssh bandit12@bandit.labs.overthewire.org -p 2220
 
-**Description**<br>:
+**Description**<br>
 The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed. For this level it may be useful to create a directory under /tmp in which you can work using mkdir. For example: mkdir /tmp/myname123. Then copy the datafile using cp, and rename it using mv (read the manpages!)
 
 **Solution**<br>
@@ -408,3 +411,4 @@ Back in our 1st terminal/pane a response is received:
 <br>![print 3](bandit20_21_captures/3.png)
 
 **Level 21 pass:** NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
+
