@@ -1,6 +1,6 @@
 
-sec_valley/coding/*
-!sec_valley/coding/weird_code
+sec_valley/*
+!sec_valley/coding/weird_code_COMPLETED
 picoCTF/*
 microcorruption/*
 tryhackme/*
