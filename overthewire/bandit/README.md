@@ -3,27 +3,27 @@ Writeups for bandit challenges ([link for the challenges](https://overthewire.or
 
 The goal of these is to practice writeups, so that later I can recall my thought process.
 
-[Bandit 0](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-0)<br>
-[Bandit 0-1](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-0-1)<br>
-[Bandit 1-2](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-1-2)<br>
-[Bandit 2-3](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-2-3)<br>
-[Bandit 3-4](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-3-4)<br>
-[Bandit 4-5](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-4-5)<br>
-[Bandit 5-6](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-5-6)<br>
-[Bandit 6-7](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-6-7)<br>
-[Bandit 7-8](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-7-8)<br>
-[Bandit 8-9](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-8-9)<br>
-[Bandit 9-10](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-9-10)<br>
-[Bandit 10-11](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-10-11)<br>
-[Bandit 11-12](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-11-12)<br>
-[Bandit 12-13](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-12-13)<br>
-[Bandit 13-14](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-13-14)<br>
-[Bandit 14-15](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-14-15)<br>
-[Bandit 15-16](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-15-16)<br>
-[Bandit 16-17](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-0-1)<br>
-[Bandit 17-18](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-0-1)<br>
-[Bandit 18-19](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-0-1)<br>
-[Bandit 19-20](https://github.com/0xdcnx/ctf_writeups/edit/main/overthewire/bandit#bandit-0-1)<br>
+[Bandit 0](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-0)<br>
+[Bandit 0-1](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-0-1)<br>
+[Bandit 1-2](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-1-2)<br>
+[Bandit 2-3](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-2-3)<br>
+[Bandit 3-4](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-3-4)<br>
+[Bandit 4-5](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-4-5)<br>
+[Bandit 5-6](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-5-6)<br>
+[Bandit 6-7](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-6-7)<br>
+[Bandit 7-8](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-7-8)<br>
+[Bandit 8-9](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-8-9)<br>
+[Bandit 9-10](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-9-10)<br>
+[Bandit 10-11](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-10-11)<br>
+[Bandit 11-12](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-11-12)<br>
+[Bandit 12-13](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-12-13)<br>
+[Bandit 13-14](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-13-14)<br>
+[Bandit 14-15](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-14-15)<br>
+[Bandit 15-16](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-15-16)<br>
+[Bandit 16-17](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-16-17)<br>
+[Bandit 17-18](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-17-18)<br>
+[Bandit 18-19](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-18-19)<br>
+[Bandit 19-20](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-19-20)<br>
 
 # Bandit 0:
 **ssh to host bandit.labs.overthewire.org with user bandit0 at port 2220**
