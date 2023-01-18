@@ -1,9 +1,0 @@
-sec_valley/coding/*
-!sec_valley/coding/weird_code_COMPLETED
-picoCTF/*
-picoCTF/
-microcorruption/*
-tryhackme/*
-# Except this file
-!.gitignore
-
