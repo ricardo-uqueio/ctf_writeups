@@ -1,0 +1,5 @@
+# Writeups for picoCTF
+
+- [codebook writeup](https://github.com/0xdcnx/ctf_writeups/tree/main/picoCTF/general/codebook)
+
+- [basic-file-exploit writeup](https://github.com/0xdcnx/ctf_writeups/tree/main/picoCTF/binary_exploitation/basic_file_exploit_COMPLETED)
