@@ -6,7 +6,8 @@ Run the Python script code.py in the same directory as codebook.txt.
 
 # Solution
 `python code.py`
-![screenshot](img.jpg)
+
+![screenshot](img.png)
 
 
 # Explaination
