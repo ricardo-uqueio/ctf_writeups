@@ -447,18 +447,22 @@ A program is running automatically at regular intervals from cron, the time-base
 
 **Solution**<br>
 After changing the current working dir to the directory in the Level Goal, there are some interesting looking cron jobs:
+
 ![shot1](./bandit21_22_captures/shot1.png)
 
 Since the goal is to reach level 22, the file `cronjob_bandit22` seems particularly interesting. Since everyone has read permissions, I can print the contents of the crontab to see what it does:
+
 ![shot2](./bandit21_22_captures/shot2.png)
 
 It looks like the script file `/usr/bin/cronjob_bandit22.sh` is being executed at startup for user `bandit22`.
 Checking the permissions for the file shows that user bandit21 (the current user) has read permissions:
 
 ![shot3](./bandit21_22_captures/shot3.png)
+
 Printing the contents of the script:
 
 ![shot4](./bandit21_22_captures/shot4.png)
+
 The script first tries to change the permissions of the file `/tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv` and then writes to it the password for the user bandit22.
 Checking the permissions of the output file, we have read permissions:
 
@@ -489,6 +493,7 @@ This level is similar to the last one, but with a little twist. Taking a look at
 The script `/usr/bin/cronjob_bandit23.sh` is executed at startup for user `bandit23`. Taking a look at the contents of the script:
 
 ![shot2](./bandit22_23_captures/shot2.png)
+
 The password for the current user defined as the variable `$myname` is being written to the file `$mytarget` which is the md5sum result of an echo of the string `I am user $myname`, which is then piped to `cut -d ' ' -f 1`.
 
 If we run the file we can see that it outputs to a certain directory the password for the current level:
@@ -505,6 +510,7 @@ In this case, if we can change `$myname` from user 'bandit22' to user 'bandit23'
 We can check this behaviour first by running the commands that create the temp directory `$mytarget` and replacing the variable `$myname` with bandit22, as the result of this should be the file created by the script:
 
 ![shot5](./bandit22_23_captures/shot5.png)
+
 We can see that the result matches the directory created by the script. Now, replacing bandit22 with the goal, bandit23:
 
 ![shot6](./bandit22_23_captures/shot6.png)
