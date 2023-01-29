@@ -26,6 +26,7 @@ The goal of these is to practice writeups, so that later I can recall my thought
 - [Bandit 19-20](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-19-20)<br>
 - [Bandit 20-21](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-20-21)<br>
 - [Bandit 21-22](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-21-22)<br>
+- [Bandit 22-23](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/bandit#bandit-22-23)<br>
 
 # Bandit 0:
 **ssh to host bandit.labs.overthewire.org with user bandit0 at port 2220**
