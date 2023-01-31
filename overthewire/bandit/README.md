@@ -501,7 +501,7 @@ If we run the file we can see that it outputs to a certain directory the passwor
 ![shot3](./bandit22_23_captures/shot3.png)
 ![shot4](./bandit22_23_captures/shot4.png)
 
-This is because the script uses `whoami` to select the user in var `$myname` which in this case is bandit22 - the current user.
+This is because the script uses `whoami` to set the user in var `$myname` which in this case is bandit22 - the current user.
 
 The file `/tmp/8169b67bd894ddbb4412f91573b38db3` is also defined using the current user. 
 
@@ -511,7 +511,7 @@ We can check this behaviour first by running the commands that create the temp d
 
 ![shot5](./bandit22_23_captures/shot5.png)
 
-We can see that the result matches the directory created by the script. Now, replacing bandit22 with the goal, bandit23:
+We can see that the result `8169b67bd894ddbb4412f91573b38db3` matches the directory created by the script for user bandit22. Now, replacing bandit22 with bandit23, we should get the directory where the script would write the password for user bandit23:
 
 ![shot6](./bandit22_23_captures/shot6.png)
 
