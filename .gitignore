@@ -1,0 +1,11 @@
+sec_valley/coding/*
+!sec_valley/coding/weird_code_COMPLETED
+picoCTF/*
+!picoCTF/general/*
+microcorruption/*
+# tryhackme/*
+# !tryhackme/agent_sudo/*
+add_readme_to_subfiles.sh
+# Except this file
+# .gitignore
+
