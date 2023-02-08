@@ -12,7 +12,7 @@ Anders Tonfeldt
 - [Leviathan 0 - 1](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/leviathan#leviathan-0-1)
 - [Leviathan 1 - 2](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/leviathan#leviathan-1-2)
 
-# Leviathan 0 - 1
+# Leviathan 0-1
 
 This is a series of beginner challenges geared towards basic *nix commands. 
 
@@ -38,7 +38,7 @@ Success!
 
 **Password for leviathan1:** PPIfmI1qsA
 
-# Leviathan 1 - 2
+# Leviathan 1-2
 
 `ssh leviathan1@leviathan.labs.overthewire.org -p 2223`
 
