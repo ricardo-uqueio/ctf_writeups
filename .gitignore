@@ -3,8 +3,8 @@ sec_valley/coding/*
 picoCTF/*
 !picoCTF/general/*
 microcorruption/*
-# tryhackme/*
-# !tryhackme/agent_sudo/*
+tryhackme/*
+!tryhackme/agent_sudo/
 add_readme_to_subfiles.sh
 # Except this file
 # .gitignore
