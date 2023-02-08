@@ -1,7 +1,5 @@
 Writeups for leviathan challenges
 
-- [Leviathan 0 - 1]()
-- [Leviathan 1 - 2]()
 
 **Summary**<br>
 Difficulty: 1/10<br>
@@ -10,6 +8,9 @@ Platform: Linux/x86<br>
 
 Author:<br>
 Anders Tonfeldt
+
+- [Leviathan 0 - 1](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/leviathan#leviathan-0-1)
+- [Leviathan 1 - 2](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/leviathan#leviathan-1-2)
 
 # Leviathan 0 - 1
 
