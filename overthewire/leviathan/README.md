@@ -42,6 +42,8 @@ Success!
 
 `ssh leviathan1@leviathan.labs.overthewire.org -p 2223`
 
+
+# Solution
 First, we check what we have in the home directory:
 
 ![shot0](./leviathan1_2/shot0.png)
@@ -67,4 +69,5 @@ Success! Using that string as the password gives a shell. Checking who is the cu
 I used the command `$SHELL` to spawn a nicer terminal as the one given is very limited.
 
 **Password for leviathan2:** mEh5PNl10e
+
 
