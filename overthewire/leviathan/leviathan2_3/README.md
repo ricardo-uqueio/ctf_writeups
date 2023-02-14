@@ -6,7 +6,7 @@ Solving this level involves using a very interesting trick (or rather 2 tricks).
 
 ![shot0](./shots/shot0.png)
 
-Trying to run the file tells us what it does and how to use it. It prints the contents of a file, but when we try to get the password file for the next level, it does't allow us.
+Trying to run the file tells us what it does and how to use it. It prints the contents of a file, but when we try to print the password for the next level, it does not allow us.
 
 ![shot1](./shots/shot1.png)
 
@@ -14,16 +14,16 @@ Just like in the previous level, let's run ltrace on the file to see what pops u
 
 ![shot2](./shots/shot2.png)
 
-Let's run ltrace again but this time with the password for the current level which we do have permissions to read to see what happens:
+Let's run ltrace again but this time specifying the password file for the current level which we do have permissions to read, so we can see what happens:
 
 ![shot3](./shots/shot3.png)
 
-The file is using the `access()` method to verify that we have the right permissions to access the file being passed in.
+The file is using the `access()` method to verify that we have the right permissions before accessing the file being passed in.
 After `access()` checks that we do in fact have permissions to read the file we input, it then runs `/bin/cat %s` where %s is what we input, in this case the password file for leviathan2. 
 
 # Method 1
 
-The issue here is that `access()` uses the full pathname of the file to check for permissions, but when executing `/bin/cat %s`, the **%s** is not sanitized to make sure that what we input is really just a file name. We can take advantage of this by using a semicolon (`;`) in the filename.  which when passed to `%s`, allows us to execute another command after `/bin/cat`. We can verify this behavior by using `;id` after the filename.
+The issue here is that `access()` uses the full pathname for the file we provide to check for permissions, but when executing `/bin/cat %s`, the **%s** is not sanitized to make sure that what we input is really just a file name. We can take advantage of this by using a semicolon (`;`) in the filename which when passed to `%s`, allows us to execute another command after `/bin/cat`. We can verify this behavior by using `;id` in the filename and use ltrace on it:
 
 ![shot4](./shots/shot4.png)
 
@@ -32,10 +32,9 @@ From the output we can see that first, `access()` checks to see if we have permi
 
 We can also see that the `id` command prints information about user leviathan3. This is because `printfile` is a setuid binary which temporarily elevates our privileges to that of user leviathan3. This means that after `access()` checks that we have permissions to read a file, the next commands are executed as user leviathan3.
 
-All that is left is to find a way to view the password file for the next level. Instead of using `id` we can use command `sh` to spawn a terminal as the setuid user and run cat the password for the next level:
+All that is left is to find a way to view the password file for the next level. Instead of using `id` we can use command `sh` to spawn a terminal and run cat to get the password for the next level:
 
 ![shot5](./shots/shot5.png)
-
 
 Success!
 
@@ -43,7 +42,7 @@ Success!
 
 The second method is similar to the first in that it takes advantage of the fact that when the program tries to run `/bin/cat %s`, the %s is not sanitized.
 
-As stated before, when `access()` runs, it uses the full pathname of the file provided to check if we have the right permissions for the file. The command `bin/cat %s` however does not check the full path of the filename provided. We can confirm this behavior by providing a filename with spaces on it:
+As stated before, when `access()` runs, it uses the full pathname of the file provided to check if we have the right permissions for the file. The command `bin/cat %s` however does not check the full path of the filename provided. We can confirm this behavior by creating a filename with spaces and running ltrace on it:
 
 ![shot6](./shots/shot6.png)
 
