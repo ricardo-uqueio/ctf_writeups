@@ -63,9 +63,9 @@ The next step would be to use ltrace or strace to see if either helps.
 
 From running ltrace, it seems that the program tries to compare our input with the string 'sex'.
 
-Success! Using that string as the password gives a shell. Checking who is the current user reveals that we've upgraded to 'leviathan2', we can print the password to connect to this level with ssh as we have read access to the password file:
-
 ![shot3](./leviathan1_2/shot3.png)
+
+Success! Using that string as the password gives a shell. Checking who is the current user reveals that we've upgraded to 'leviathan2', we can print the password to connect to this level with ssh as we have read access to the password file:
 
 I used the command `$SHELL` to spawn a nicer terminal as the one given is very limited.
 
