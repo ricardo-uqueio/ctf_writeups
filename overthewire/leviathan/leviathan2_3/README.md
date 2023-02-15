@@ -1,7 +1,7 @@
 # Leviathan 2-3
-`ssh leviathan1@leviathan.labs.overthewire.org -p 2223`
+`ssh leviathan2@leviathan.labs.overthewire.org -p 2223`
 
-# Solution
+**Solution**<br>
 Solving this level involves using a very interesting trick (or rather 2 tricks). First, we take a look at the available files in the home directory with `ls -al` or it's shorthand equivalent `ll` (if available as an alias). There is a `printfile` setuid executable.
 
 ![shot0](./shots/shot0.png)
@@ -21,8 +21,7 @@ Let's run ltrace again but this time specifying the password file for the curren
 The file is using the `access()` method to verify that we have the right permissions before accessing the file being passed in.
 After `access()` checks that we do in fact have permissions to read the file we input, it then runs `/bin/cat %s` where %s is what we input, in this case the password file for leviathan2. 
 
-# Method 1
-
+**Method 1**<br>
 The issue here is that `access()` uses the full pathname for the file we provide to check for permissions, but when executing `/bin/cat %s`, the **%s** is not sanitized to make sure that what we input is really just a file name. We can take advantage of this by using a semicolon (`;`) in the filename which when passed to `%s`, allows us to execute another command after `/bin/cat`. We can verify this behavior by using `;id` in the filename and use ltrace on it:
 
 ![shot4](./shots/shot4.png)
@@ -38,8 +37,7 @@ All that is left is to find a way to view the password file for the next level. 
 
 Success!
 
-# Method 2
-
+**Method 2**<br>
 The second method is similar to the first in that it takes advantage of the fact that when the program tries to run `/bin/cat %s`, the %s is not sanitized.
 
 As stated before, when `access()` runs, it uses the full pathname of the file provided to check if we have the right permissions for the file. The command `bin/cat %s` however does not check the full path of the filename provided. We can confirm this behavior by creating a filename with spaces and running ltrace on it:
@@ -65,4 +63,8 @@ In summary, the way to exploit this:
 Success!
 
 **Password for leviathan3:** Q0G8j4sakn
+
+[Next level: Leviathan 3 -> 4](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/leviathan/leviathan3_4#readme)
+
+[Back to the list of solved challenges](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/leviathan#solved-challenges)
 

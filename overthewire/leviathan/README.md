@@ -9,9 +9,12 @@ Platform: Linux/x86<br>
 Author:<br>
 Anders Tonfeldt
 
-- [Leviathan 0 -> 1](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/leviathan#leviathan-0-1)
-- [Leviathan 1 -> 2](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/leviathan#leviathan-1-2)
-- [Leviathan 2 -> 3](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/leviathan/leviathan2_3#leviathan-2-3)
+# Solved challenges
+1. [Leviathan 0 -> 1](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/leviathan#leviathan-0-1)
+2. [Leviathan 1 -> 2](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/leviathan#leviathan-1-2)
+3. [Leviathan 2 -> 3](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/leviathan/leviathan2_3#readme)
+4. [Leviathan 3 -> 4](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/leviathan/leviathan3_4#readme)
+
 
 # Leviathan 0-1
 
@@ -71,6 +74,8 @@ I used the command `$SHELL` to spawn a nicer terminal as the one given is very l
 
 **Password for leviathan2:** mEh5PNl10e
 
-[Next level: Leviathan 2 -> 3](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/leviathan/leviathan2_3#leviathan-2-3)
+[Next level: Leviathan 2 -> 3](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/leviathan/leviathan2_3#readme)
+
+[Back to the list of solved challenges](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/leviathan#solved-challenges)
 
 
