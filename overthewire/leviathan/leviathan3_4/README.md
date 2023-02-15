@@ -21,5 +21,5 @@ Running the file again and using this hardcoded string as the password we get a 
 
 **Password for leviathan3:** AgvropI4OA
 
-[Back to the list of solved challenges](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/leviathan#solved-challenges)
+[Back to the list of solved challenges](https://github.com/ricardo-uqueio/ctf_writeups/tree/main/overthewire/leviathan#solved-challenges)
 

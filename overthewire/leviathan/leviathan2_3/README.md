@@ -64,7 +64,7 @@ Success!
 
 **Password for leviathan3:** Q0G8j4sakn
 
-[Next level: Leviathan 3 -> 4](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/leviathan/leviathan3_4#readme)
+[Next level: Leviathan 3 -> 4](https://github.com/ricardo-uqueio/ctf_writeups/tree/main/overthewire/leviathan/leviathan3_4#readme)
 
-[Back to the list of solved challenges](https://github.com/0xdcnx/ctf_writeups/tree/main/overthewire/leviathan#solved-challenges)
+[Back to the list of solved challenges](https://github.com/ricardo-uqueio/ctf_writeups/tree/main/overthewire/leviathan#solved-challenges)
 
