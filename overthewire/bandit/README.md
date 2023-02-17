@@ -205,10 +205,7 @@ cp data.txt /tmp/tmp.G3HoQxcjLc
 cd /tmp/tmp.G3HoQxcjLc
 ```
 
-When I use `file data`:``
-<br>![print 1](bandit12_13_captures/1.png)
-
-It's recognized as a normal text file, but when you print it's contents we can see that the data is not in 'readable' text. 
+When you print it's contents we can see that the data is not in 'readable' text. 
 <br>![print 2](bandit12_13_captures/2.png)
 
 The information provided tells us that the file is in fact the hexdump of a another file which was compressed multiple times.
@@ -217,10 +214,9 @@ So first, we need to return the hexdumped data to it's original format.
 xxd is a tool that allows us to make a hexdump or do the reverse.. We can use xxd to reverse the hexdump to it's original format, and store the result in a file I'll name "data", with:
 `xxd -r data.txt > data`
 
-With command `file data`:
 <br>![print 3](bandit12_13_captures/3.png)
 
-We can see that the file is in fact gzip compressed data. We can use gunzip or gzip -d to decompress the file, but they only allow gzip extensions. So first we rename the file and then we decompress it:
+From `file data` we can see that the file is in fact gzip compressed data. We can use gunzip or gzip -d to decompress the file, but these tools require files with a gzip extensions. So first we rename the file and then we decompress it:
 <br>![print 4](bandit12_13_captures/4.png)
 
 Checking the decompressed file type, it shows that it is a bzip2 compressed file:
@@ -232,7 +228,7 @@ Decompressing and seeing what type of file it is:
 Again we get a bzip file. The process is the same as before:
 <br>![print 7](bandit12_13_captures/7.png)
 
-This time the resulting file data5 compressed with tar. Decompressing it we get data5.bin:
+This time the resulting file data5 is compressed using tar. Decompressing it we get data5.bin:
 <br>![print 8](bandit12_13_captures/8.png)
 
 So we repeat the process:
@@ -322,7 +318,7 @@ With `-p31000-32000` we are specifying the range of ports to be scanned (31000-3
 
 From the output, we can verify that of the 5 open ports, only two support SSL. `31518 and 31790.` 
 
-Just like in the last challenge, we can use echo and pipe the output with `openssl s_client [options] host:port` to send data to the server. But since here we have 2 ports, I created a small bash script that automates the process of sending data to both ports (Also, at first I tought I migh have to run openssl on all 5 ports).
+Just like in the last challenge, we can use echo and pipe the output with `openssl s_client [options] host:port` to send data to the server. But since here we have 2 ports, I created a small bash script that automates the process of sending data to both ports (also beacause, I first tought I migh have to run openssl on all 5 ports).
 `send_data.sh`
 
 ```
@@ -340,7 +336,7 @@ First, `cat /etc/bandit_pass/bandit16` prints the contents of the current level.
 
 Next, the command `timeout 1 <command>` is used to force a 1 second timeout to the command `openssl s_client` command. Simply running the `openssl s_client` command causes the shell to hang without being able to move to the next iteration. Either that or openssl has a builtin timeout that takes too long for what I need, so the `timeout` command is still welcome.
 
-`openssl s_client -connect localhost:$port -ign_eof -quiet` command works just like in the previous level but with a few changes:
+Next `openssl s_client -connect localhost:$port -ign_eof -quiet` command works just like in the previous level but with one addition:
 `-quiet` forces the output to be less verbose.
 
 Running the file I get:
