@@ -5,7 +5,7 @@ picoCTF/*
 microcorruption/*
 
 tryhackme/*
-!tryhackme/agent_sudo_COMPLETED
+# !tryhackme/agent_sudo_COMPLETED
 
 add_readme_to_subfiles.sh
 # Except this file
