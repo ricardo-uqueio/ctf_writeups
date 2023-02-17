@@ -214,10 +214,9 @@ So first, we need to return the hexdumped data to it's original format.
 xxd is a tool that allows us to make a hexdump or do the reverse.. We can use xxd to reverse the hexdump to it's original format, and store the result in a file I'll name "data", with:
 `xxd -r data.txt > data`
 
-With command `file data`:
 <br>![print 3](bandit12_13_captures/3.png)
 
-We can see that the file is in fact gzip compressed data. We can use gunzip or gzip -d to decompress the file, but they only allow gzip extensions. So first we rename the file and then we decompress it:
+From `file data` we can see that the file is in fact gzip compressed data. We can use gunzip or gzip -d to decompress the file, but they only allow gzip extensions. So first we rename the file and then we decompress it:
 <br>![print 4](bandit12_13_captures/4.png)
 
 Checking the decompressed file type, it shows that it is a bzip2 compressed file:
