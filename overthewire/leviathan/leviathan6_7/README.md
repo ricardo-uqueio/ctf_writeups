@@ -35,6 +35,6 @@ Knowing that the program uses the values obtained from `atoi` before comparing s
 
 **Password for leviathan7:** 8GpZ5f8Hze
 
-<!-- [Next level: Leviathan 7 -> 8](https://github.com/ricardo-uqueio/ctf_writeups/tree/main/overthewire/leviathan/leviathan6_7#readme) -->
+[Last level: Leviathan 7](https://github.com/ricardo-uqueio/ctf_writeups/tree/main/overthewire/leviathan/leviathan7#readme)
 
 [Back to the list of solved challenges](https://github.com/ricardo-uqueio/ctf_writeups/tree/main/overthewire/leviathan#solved-challenges)
