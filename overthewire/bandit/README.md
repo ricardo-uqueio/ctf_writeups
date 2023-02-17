@@ -205,10 +205,7 @@ cp data.txt /tmp/tmp.G3HoQxcjLc
 cd /tmp/tmp.G3HoQxcjLc
 ```
 
-When I use `file data`:``
-<br>![print 1](bandit12_13_captures/1.png)
-
-It's recognized as a normal text file, but when you print it's contents we can see that the data is not in 'readable' text. 
+When you print it's contents we can see that the data is not in 'readable' text. 
 <br>![print 2](bandit12_13_captures/2.png)
 
 The information provided tells us that the file is in fact the hexdump of a another file which was compressed multiple times.
