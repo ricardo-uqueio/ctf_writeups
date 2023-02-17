@@ -57,4 +57,5 @@ This way, when we use `print $()` it converts the character codes into actual st
 
 **Password for leviathan5:** EKKlTF1Xqs
 
+[Back to the list of solved challenges](https://github.com/ricardo-uqueio/ctf_writeups/tree/main/overthewire/leviathan#solved-challenges)
 
