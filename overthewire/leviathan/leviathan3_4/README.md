@@ -1,5 +1,5 @@
 # Leviathan 3-4
-`ssh leviathan3@leviathan.labs.overthewire.org -p 2223`
+`ssh leviathan3@leviathan.labs.overthewirpe.org -p 2223`
 
 
 **Solution**<br>
@@ -19,7 +19,7 @@ Running the file again and using this hardcoded string as the password we get a 
 
 ![shot2](./shots/shot3.png)
 
-**Password for leviathan3:** AgvropI4OA
+**Password for leviathan4:** AgvropI4OA
 
 [Back to the list of solved challenges](https://github.com/ricardo-uqueio/ctf_writeups/tree/main/overthewire/leviathan#solved-challenges)
 
