@@ -1,5 +1,5 @@
 # Leviathan 4-5
-`ssh leviathan4@leviathan.labs.overthewirpe.org -p 2223`
+`ssh leviathan4@leviathan.labs.overthewire.org -p 2223`
 
 
 **Solution**<br>
@@ -56,6 +56,8 @@ This way, when we use `print $()` it converts the character codes into actual st
 ![shot6](./shots/shot6.png)
 
 **Password for leviathan5:** EKKlTF1Xqs
+
+[Next level: Leviathan 5 -> 6](https://github.com/ricardo-uqueio/ctf_writeups/tree/main/overthewire/leviathan/leviathan5_6#readme)
 
 [Back to the list of solved challenges](https://github.com/ricardo-uqueio/ctf_writeups/tree/main/overthewire/leviathan#solved-challenges)
 

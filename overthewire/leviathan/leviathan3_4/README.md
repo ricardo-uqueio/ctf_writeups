@@ -1,5 +1,5 @@
 # Leviathan 3-4
-`ssh leviathan3@leviathan.labs.overthewirpe.org -p 2223`
+`ssh leviathan3@leviathan.labs.overthewire.org -p 2223`
 
 
 **Solution**<br>

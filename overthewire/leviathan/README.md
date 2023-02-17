@@ -15,6 +15,8 @@ Anders Tonfeldt
 3. [Leviathan 2 -> 3](https://github.com/ricardo-uqueio/ctf_writeups/tree/main/overthewire/leviathan/leviathan2_3#readme)
 4. [Leviathan 3 -> 4](https://github.com/ricardo-uqueio/ctf_writeups/tree/main/overthewire/leviathan/leviathan3_4#readme)
 5. [Leviathan 4 -> 5](https://github.com/ricardo-uqueio/ctf_writeups/tree/main/overthewire/leviathan/leviathan4_5#readme)
+6. [Leviathan 5 -> 6](https://github.com/ricardo-uqueio/ctf_writeups/tree/main/overthewire/leviathan/leviathan5_6#readme)
+7. [Next level: Leviathan 6 -> 7](https://github.com/ricardo-uqueio/ctf_writeups/tree/main/overthewire/leviathan/leviathan6_7#readme)
 
 
 # Leviathan 0-1
